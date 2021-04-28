@@ -1,0 +1,57 @@
+{
+	"name": "ds_dynamic_input_csv_folder",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_aravindcontainer_linkage",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"loopthroughfilenames": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "Dev datasets"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().loopthroughfilenames",
+					"type": "Expression"
+				},
+				"folderPath": "inputcsv",
+				"fileSystem": "aravindcontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Customer_number",
+				"type": "String"
+			},
+			{
+				"name": "Customer_name",
+				"type": "String"
+			},
+			{
+				"name": "customer_age",
+				"type": "String"
+			},
+			{
+				"name": "email",
+				"type": "String"
+			},
+			{
+				"name": "mobile",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
