@@ -1,0 +1,27 @@
+{
+	"name": "ds_dynamically_output_csv_folder",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_aravindcontainer_linkage",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Dev datasets"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "outputcsv",
+				"fileSystem": "aravindcontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
