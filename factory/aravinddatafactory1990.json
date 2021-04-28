@@ -1,9 +1,9 @@
 {
 	"name": "aravinddatafactory1990",
-	"location": "centralus",
+	"location": "eastus",
 	"identity": {
 		"type": "SystemAssigned",
-		"principalId": "3ac4b7eb-bb01-4f3b-b8ef-717fd0056b1d",
+		"principalId": "f761257f-6a6d-4142-b23b-0a5ea371891d",
 		"tenantId": "3617ef9b-98b4-40d9-ba43-e1ed6709cf0d"
 	}
 }
