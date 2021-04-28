@@ -1,0 +1,26 @@
+{
+	"name": "ds_fixedlength_file_newdataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_incremental_filecopy_link",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Dev datasets"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "fixedlength.txt",
+				"folderPath": "input",
+				"fileSystem": "adfdemo"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
