@@ -1,5 +1,5 @@
 {
-	"name": "ds_get_metadata",
+	"name": "ds_get_metadata_folder",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_aravindcontainer_linkage",
