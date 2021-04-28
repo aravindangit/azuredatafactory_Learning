@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "ds_get_metadata",
+						"referenceName": "ds_get_metadata_folder",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
